@@ -1,0 +1,70 @@
+{% load static %}
+<html>
+<head>
+    <title>home page</title>
+   <style>
+    h1 {
+        letter-spacing: 1px;
+        font-size: 80px;
+        margin-top: 180px;
+    }
+
+    #btn {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+
+
+    #btn:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+</style>
+<body>
+<center>
+<h1>
+  <span style='color: blue'>S</span>
+  <span style='color: red'>e</span>
+  <span style='color: orange'>a</span>
+  <span style='color: blue'>r</span>
+  <span style='color: green'>c</span>
+  <span style="color: red; transform: rotate(80deg)">h</span>
+</h1>
+
+
+</center>
+<center>
+    <form method="POST">
+                {% csrf_token %}
+                <label></label>
+                <input type="text" name="data" class="form-control"style="margin-top: -20px;padding:20px;  width: 570px;
+                  height: 45px;border-radius: 25px;border-style: solid;border-width: thin;box-shadow: 2px 2px 8px 2px gray;/"><br>
+                <input type="submit" value="Search" id="btn"  class="'btn btn-success'">
+
+</center>
+
+
+
+<div>
+
+<img src="{% static 'images/search.png' %}"style="height: 35px;margin-left:962px;margin-top: -124px;border-radius: 5px;">
+    </div>
+
+
+</body>
+</html>
